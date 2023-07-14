@@ -40,7 +40,7 @@ for instrument in midi_data.instruments:
     else:
         full_data = pd.concat([full_data, df], axis=1)
 
-full_data.to_csv("output/" + filename + ".csv")
+# full_data.to_csv("output/" + filename + ".csv")
 
 import json
 
@@ -70,8 +70,8 @@ for column in full_data.columns:
         json_data["patterns"][column_index].append(pattern)
 
 
-with open("output/" + filename + ".json", "w") as outfile:
-    json.dump(json_data, outfile)
+# with open("output/" + filename + ".json", "w") as outfile:
+#     json.dump(json_data, outfile)
 
 
 with open("output/" + filename + ".txt", "w") as outfile:

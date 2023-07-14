@@ -2,7 +2,7 @@
 Using vanilla FL Studio 20, you can create custom glyphs for Nothing Phone (1), which can be exported as a MIDI file. The `converter.py` script will export it in the correct format to use it with [Glyph Control - Phone (1)](https://play.google.com/store/apps/details?id=tech.ozstudios.np1_glyph_control)
 
 
-###  **Warning! This repo isn't really user friendly, so you have to do some research on your own f you get stuck. Root is also needed!**
+###  **Warning! This repo isn't really user friendly, so you have to do some research on your own if you get stuck. Root is also needed!**
 
 Editor:
 ![FL Visualizer](https://legekka.fs.boltz.hu/lxukih.gif)
@@ -25,7 +25,7 @@ pip install -r requirements.txt
     ```
     The resolution is the duration of a single frame in milliseconds. (Default: 100)<br> 
     In theory you could use 15ms, but I don't recommend it, because my script isn't optimized for that. With my phone, I got the best results with 30/50ms, but you can play around with it. It gets slower with higher resolution because the Glyph Control app can't handle it.<br>
-    You will get 3 files in the `output` folder. 
+    You will get a TXT file in the `output` folder. 
 
 5. Now you'll have to create a new pattern in the **Glyph Control** app on your phone. I've just added some basic "Still" pattern, it will get replaced either way, so it doesn't matter.
 ![pattern-creation-1](https://legekka.fs.boltz.hu/bhnt45.png)
